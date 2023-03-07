@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/oraclepaas oraclepaa
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v3/provider"
 
 provider.NewOraclepaasProvider(scope Construct, id *string, config OraclepaasProviderConfig) OraclepaasProvider
 ```
@@ -185,7 +185,7 @@ func ResetMysqlEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v3/provider"
 
 provider.OraclepaasProvider_IsConstruct(x interface{}) *bool
 ```
@@ -217,7 +217,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v3/provider"
 
 provider.OraclepaasProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -231,7 +231,7 @@ provider.OraclepaasProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v3/provider"
 
 provider.OraclepaasProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.provider.OraclepaasProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v3/provider"
 
 &provider.OraclepaasProviderConfig {
 	IdentityDomain: *string,

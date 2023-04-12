@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/oraclepaas/r/databas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 databaseaccessrule.NewDatabaseAccessRule(scope Construct, id *string, config DatabaseAccessRuleConfig) DatabaseAccessRule
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 databaseaccessrule.DatabaseAccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 databaseaccessrule.DatabaseAccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ databaseaccessrule.DatabaseAccessRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 databaseaccessrule.DatabaseAccessRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 &databaseaccessrule.DatabaseAccessRuleConfig {
 	Connection: interface{},
@@ -768,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseacce
 	Destination: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4.databaseAccessRule.DatabaseAccessRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts,
 }
 ```
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oracl
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 &databaseaccessrule.DatabaseAccessRuleTimeouts {
 	Create: *string,
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oracl
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/databaseaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseaccessrule"
 
 databaseaccessrule.NewDatabaseAccessRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseAccessRuleTimeoutsOutputReference
 ```

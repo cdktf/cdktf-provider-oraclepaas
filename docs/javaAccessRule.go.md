@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/oraclepaas/r/java_ac
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 javaaccessrule.NewJavaAccessRule(scope Construct, id *string, config JavaAccessRuleConfig) JavaAccessRule
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 javaaccessrule.JavaAccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 javaaccessrule.JavaAccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ javaaccessrule.JavaAccessRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 javaaccessrule.JavaAccessRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 &javaaccessrule.JavaAccessRuleConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessru
 	Enabled: interface{},
 	Id: *string,
 	Protocol: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4.javaAccessRule.JavaAccessRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.javaAccessRule.JavaAccessRuleTimeouts,
 }
 ```
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oracl
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 &javaaccessrule.JavaAccessRuleTimeouts {
 	Create: *string,
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oracl
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaAccessRule.JavaAccessRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/javaaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/javaaccessrule"
 
 javaaccessrule.NewJavaAccessRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaAccessRuleTimeoutsOutputReference
 ```

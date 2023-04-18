@@ -1,3 +1,3 @@
 # `oraclepaas_java_access_rule`
 
-Refer to the Terraform Registory for docs: [`oraclepaas_java_access_rule`](https://www.terraform.io/docs/providers/oraclepaas/r/java_access_rule).
+Refer to the Terraform Registory for docs: [`oraclepaas_java_access_rule`](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_access_rule).

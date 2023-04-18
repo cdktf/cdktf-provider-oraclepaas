@@ -1,6 +1,6 @@
 # `oraclepaas_database_access_rule`
 
-Refer to the Terraform Registory for docs: [`oraclepaas_database_access_rule`](https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule).
+Refer to the Terraform Registory for docs: [`oraclepaas_database_access_rule`](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule).
 
 # `databaseAccessRule` Submodule <a name="`databaseAccessRule` Submodule" id="@cdktf/provider-oraclepaas.databaseAccessRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`oraclepaas_database_access_rule`](h
 
 ### DatabaseAccessRule <a name="DatabaseAccessRule" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule oraclepaas_database_access_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule oraclepaas_database_access_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.Initializer"></a>
 
@@ -380,7 +380,7 @@ DatabaseAccessRule.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -492,10 +492,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRule.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -758,7 +758,7 @@ using HashiCorp.Cdktf.Providers.Oraclepaas;
 
 new DatabaseAccessRuleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -781,20 +781,20 @@ new DatabaseAccessRuleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#description DatabaseAccessRule#description}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#name DatabaseAccessRule#name}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.ports">Ports</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#ports DatabaseAccessRule#ports}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.serviceInstanceId">ServiceInstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#service_instance_id DatabaseAccessRule#service_instance_id}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#source DatabaseAccessRule#source}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#destination DatabaseAccessRule#destination}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#enabled DatabaseAccessRule#enabled}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#id DatabaseAccessRule#id}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#description DatabaseAccessRule#description}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#name DatabaseAccessRule#name}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.ports">Ports</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#ports DatabaseAccessRule#ports}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.serviceInstanceId">ServiceInstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#service_instance_id DatabaseAccessRule#service_instance_id}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#source DatabaseAccessRule#source}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#destination DatabaseAccessRule#destination}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#enabled DatabaseAccessRule#enabled}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#id DatabaseAccessRule#id}. |
 | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts">DatabaseAccessRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -812,10 +812,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -877,7 +877,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#description DatabaseAccessRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#description DatabaseAccessRule#description}.
 
 ---
 
@@ -889,7 +889,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#name DatabaseAccessRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#name DatabaseAccessRule#name}.
 
 ---
 
@@ -901,7 +901,7 @@ public string Ports { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#ports DatabaseAccessRule#ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#ports DatabaseAccessRule#ports}.
 
 ---
 
@@ -913,7 +913,7 @@ public string ServiceInstanceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#service_instance_id DatabaseAccessRule#service_instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#service_instance_id DatabaseAccessRule#service_instance_id}.
 
 ---
 
@@ -925,7 +925,7 @@ public string Source { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#source DatabaseAccessRule#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#source DatabaseAccessRule#source}.
 
 ---
 
@@ -937,7 +937,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#destination DatabaseAccessRule#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#destination DatabaseAccessRule#destination}.
 
 ---
 
@@ -949,7 +949,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#enabled DatabaseAccessRule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#enabled DatabaseAccessRule#enabled}.
 
 ---
 
@@ -961,7 +961,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#id DatabaseAccessRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#id DatabaseAccessRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ public DatabaseAccessRuleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#timeouts DatabaseAccessRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#timeouts DatabaseAccessRule#timeouts}
 
 ---
 
@@ -999,8 +999,8 @@ new DatabaseAccessRuleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#create DatabaseAccessRule#create}. |
-| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#delete DatabaseAccessRule#delete}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#create DatabaseAccessRule#create}. |
+| <code><a href="#@cdktf/provider-oraclepaas.databaseAccessRule.DatabaseAccessRuleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#delete DatabaseAccessRule#delete}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#create DatabaseAccessRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#create DatabaseAccessRule#create}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule#delete DatabaseAccessRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_access_rule#delete DatabaseAccessRule#delete}.
 
 ---
 

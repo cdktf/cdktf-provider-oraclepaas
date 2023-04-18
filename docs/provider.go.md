@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`oraclepaas`](https://www.terraform.io/docs/providers/oraclepaas).
+Refer to the Terraform Registory for docs: [`oraclepaas`](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-oraclepaas.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`oraclepaas`](https://www.terraform.
 
 ### OraclepaasProvider <a name="OraclepaasProvider" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/oraclepaas oraclepaas}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs oraclepaas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.NewOraclepaasProvider(scope Construct, id *string, config OraclepaasProviderConfig) OraclepaasProvider
 ```
@@ -189,7 +189,7 @@ func ResetMysqlEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_IsConstruct(x interface{}) *bool
 ```
@@ -221,7 +221,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -235,7 +235,7 @@ provider.OraclepaasProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.provider.OraclepaasProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v4/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 &provider.OraclepaasProviderConfig {
 	IdentityDomain: *string,
@@ -631,7 +631,7 @@ IdentityDomain *string
 
 The OPAAS identity domain for API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#identity_domain OraclepaasProvider#identity_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#identity_domain OraclepaasProvider#identity_domain}
 
 ---
 
@@ -645,7 +645,7 @@ Password *string
 
 The user password for OPAAS API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#password OraclepaasProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#password OraclepaasProvider#password}
 
 ---
 
@@ -659,7 +659,7 @@ User *string
 
 The user name for OPAAS API operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#user OraclepaasProvider#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#user OraclepaasProvider#user}
 
 ---
 
@@ -673,7 +673,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#alias OraclepaasProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#alias OraclepaasProvider#alias}
 
 ---
 
@@ -687,7 +687,7 @@ ApplicationEndpoint *string
 
 The HTTP endpoint for the Oracle Application operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#application_endpoint OraclepaasProvider#application_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#application_endpoint OraclepaasProvider#application_endpoint}
 
 ---
 
@@ -701,7 +701,7 @@ DatabaseEndpoint *string
 
 The HTTP endpoint for Oracle Database operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#database_endpoint OraclepaasProvider#database_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#database_endpoint OraclepaasProvider#database_endpoint}
 
 ---
 
@@ -715,7 +715,7 @@ Insecure interface{}
 
 Skip TLS Verification for self-signed certificates. Should only be used if absolutely required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#insecure OraclepaasProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#insecure OraclepaasProvider#insecure}
 
 ---
 
@@ -729,7 +729,7 @@ JavaEndpoint *string
 
 The HTTP endpoint for Oracle Java operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#java_endpoint OraclepaasProvider#java_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#java_endpoint OraclepaasProvider#java_endpoint}
 
 ---
 
@@ -743,7 +743,7 @@ MaxRetries *f64
 
 Maximum number retries to wait for a successful response when operating on resources within OPAAS (defaults to 1).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#max_retries OraclepaasProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#max_retries OraclepaasProvider#max_retries}
 
 ---
 
@@ -757,7 +757,7 @@ MysqlEndpoint *string
 
 The HTTP endpoint for Oracle MySQL operations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/oraclepaas#mysql_endpoint OraclepaasProvider#mysql_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#mysql_endpoint OraclepaasProvider#mysql_endpoint}
 
 ---
 

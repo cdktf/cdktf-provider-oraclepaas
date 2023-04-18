@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`oraclepaas`](https://www.terraform.io/docs/providers/oraclepaas).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-oraclepaas.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

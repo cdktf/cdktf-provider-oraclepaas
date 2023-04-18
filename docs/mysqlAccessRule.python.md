@@ -1,3 +1,7 @@
+# `oraclepaas_mysql_access_rule`
+
+Refer to the Terraform Registory for docs: [`oraclepaas_mysql_access_rule`](https://www.terraform.io/docs/providers/oraclepaas/r/mysql_access_rule).
+
 # `mysqlAccessRule` Submodule <a name="`mysqlAccessRule` Submodule" id="@cdktf/provider-oraclepaas.mysqlAccessRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

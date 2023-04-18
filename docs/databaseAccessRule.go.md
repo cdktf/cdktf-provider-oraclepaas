@@ -1,3 +1,7 @@
+# `oraclepaas_database_access_rule`
+
+Refer to the Terraform Registory for docs: [`oraclepaas_database_access_rule`](https://www.terraform.io/docs/providers/oraclepaas/r/database_access_rule).
+
 # `databaseAccessRule` Submodule <a name="`databaseAccessRule` Submodule" id="@cdktf/provider-oraclepaas.databaseAccessRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

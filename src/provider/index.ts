@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs
 // generated from terraform resource schema
 
@@ -14,61 +9,61 @@ import * as cdktf from 'cdktf';
 export interface OraclepaasProviderConfig {
   /**
   * The HTTP endpoint for the Oracle Application operations
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#application_endpoint OraclepaasProvider#application_endpoint}
   */
   readonly applicationEndpoint?: string;
   /**
   * The HTTP endpoint for Oracle Database operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#database_endpoint OraclepaasProvider#database_endpoint}
   */
   readonly databaseEndpoint?: string;
   /**
   * The OPAAS identity domain for API operations
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#identity_domain OraclepaasProvider#identity_domain}
   */
   readonly identityDomain: string;
   /**
   * Skip TLS Verification for self-signed certificates. Should only be used if absolutely required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#insecure OraclepaasProvider#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * The HTTP endpoint for Oracle Java operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#java_endpoint OraclepaasProvider#java_endpoint}
   */
   readonly javaEndpoint?: string;
   /**
   * Maximum number retries to wait for a successful response when operating on resources within OPAAS (defaults to 1)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#max_retries OraclepaasProvider#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The HTTP endpoint for Oracle MySQL operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#mysql_endpoint OraclepaasProvider#mysql_endpoint}
   */
   readonly mysqlEndpoint?: string;
   /**
   * The user password for OPAAS API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#password OraclepaasProvider#password}
   */
   readonly password: string;
   /**
   * The user name for OPAAS API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#user OraclepaasProvider#user}
   */
   readonly user: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#alias OraclepaasProvider#alias}
   */
   readonly alias?: string;

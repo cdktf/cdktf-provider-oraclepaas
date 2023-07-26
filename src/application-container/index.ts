@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container
 // generated from terraform resource schema
 
@@ -85,19 +80,19 @@ export interface ApplicationContainerConfig extends cdktf.TerraformMetaArguments
   readonly tags?: { [key: string]: string };
   /**
   * deployment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container#deployment ApplicationContainer#deployment}
   */
   readonly deployment?: ApplicationContainerDeployment;
   /**
   * manifest block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container#manifest ApplicationContainer#manifest}
   */
   readonly manifest?: ApplicationContainerManifest;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container#timeouts ApplicationContainer#timeouts}
   */
   readonly timeouts?: ApplicationContainerTimeouts;
@@ -319,7 +314,7 @@ export interface ApplicationContainerDeployment {
   readonly secureEnvironment?: string[];
   /**
   * services block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container#services ApplicationContainer#services}
   */
   readonly services?: ApplicationContainerDeploymentServices[] | cdktf.IResolvable;
@@ -741,13 +736,13 @@ export interface ApplicationContainerManifest {
   readonly type?: string;
   /**
   * release block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container#release ApplicationContainer#release}
   */
   readonly release?: ApplicationContainerManifestRelease;
   /**
   * runtime block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/application_container#runtime ApplicationContainer#runtime}
   */
   readonly runtime?: ApplicationContainerManifestRuntime;

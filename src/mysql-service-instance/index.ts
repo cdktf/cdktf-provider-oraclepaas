@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance
 // generated from terraform resource schema
 
@@ -69,19 +64,19 @@ export interface MysqlServiceInstanceConfig extends cdktf.TerraformMetaArguments
   readonly vmUser?: string;
   /**
   * backups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance#backups MysqlServiceInstance#backups}
   */
   readonly backups?: MysqlServiceInstanceBackups;
   /**
   * mysql_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance#mysql_configuration MysqlServiceInstance#mysql_configuration}
   */
   readonly mysqlConfiguration: MysqlServiceInstanceMysqlConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance#timeouts MysqlServiceInstance#timeouts}
   */
   readonly timeouts?: MysqlServiceInstanceTimeouts;
@@ -441,7 +436,7 @@ export interface MysqlServiceInstanceMysqlConfiguration {
   readonly sourceServiceName?: string;
   /**
   * enterprise_monitor_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance#enterprise_monitor_configuration MysqlServiceInstance#enterprise_monitor_configuration}
   */
   readonly enterpriseMonitorConfiguration?: MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration;

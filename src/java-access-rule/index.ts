@@ -53,7 +53,7 @@ export interface JavaAccessRuleConfig extends cdktf.TerraformMetaArguments {
   readonly source: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_access_rule#timeouts JavaAccessRule#timeouts}
   */
   readonly timeouts?: JavaAccessRuleTimeouts;

@@ -89,43 +89,43 @@ export interface DatabaseServiceInstanceConfig extends cdktf.TerraformMetaArgume
   readonly version: string;
   /**
   * backups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#backups DatabaseServiceInstance#backups}
   */
   readonly backups?: DatabaseServiceInstanceBackups;
   /**
   * database_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#database_configuration DatabaseServiceInstance#database_configuration}
   */
   readonly databaseConfiguration: DatabaseServiceInstanceDatabaseConfiguration;
   /**
   * default_access_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#default_access_rules DatabaseServiceInstance#default_access_rules}
   */
   readonly defaultAccessRules?: DatabaseServiceInstanceDefaultAccessRules;
   /**
   * hybrid_disaster_recovery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#hybrid_disaster_recovery DatabaseServiceInstance#hybrid_disaster_recovery}
   */
   readonly hybridDisasterRecovery?: DatabaseServiceInstanceHybridDisasterRecovery;
   /**
   * instantiate_from_backup block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#instantiate_from_backup DatabaseServiceInstance#instantiate_from_backup}
   */
   readonly instantiateFromBackup?: DatabaseServiceInstanceInstantiateFromBackup;
   /**
   * standby block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#standby DatabaseServiceInstance#standby}
   */
   readonly standby?: DatabaseServiceInstanceStandby;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/database_service_instance#timeouts DatabaseServiceInstance#timeouts}
   */
   readonly timeouts?: DatabaseServiceInstanceTimeouts;

@@ -105,31 +105,31 @@ export interface JavaServiceInstanceConfig extends cdktf.TerraformMetaArguments 
   readonly useIdentityService?: boolean | cdktf.IResolvable;
   /**
   * backups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#backups JavaServiceInstance#backups}
   */
   readonly backups: JavaServiceInstanceBackups;
   /**
   * load_balancer block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#load_balancer JavaServiceInstance#load_balancer}
   */
   readonly loadBalancer?: JavaServiceInstanceLoadBalancer;
   /**
   * oracle_traffic_director block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#oracle_traffic_director JavaServiceInstance#oracle_traffic_director}
   */
   readonly oracleTrafficDirector?: JavaServiceInstanceOracleTrafficDirector;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#timeouts JavaServiceInstance#timeouts}
   */
   readonly timeouts?: JavaServiceInstanceTimeouts;
   /**
   * weblogic_server block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#weblogic_server JavaServiceInstance#weblogic_server}
   */
   readonly weblogicServer: JavaServiceInstanceWeblogicServer;
@@ -694,13 +694,13 @@ export interface JavaServiceInstanceOracleTrafficDirector {
   readonly shape: string;
   /**
   * admin block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#admin JavaServiceInstance#admin}
   */
   readonly admin: JavaServiceInstanceOracleTrafficDirectorAdmin;
   /**
   * listener block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#listener JavaServiceInstance#listener}
   */
   readonly listener?: JavaServiceInstanceOracleTrafficDirectorListener;
@@ -2361,49 +2361,49 @@ export interface JavaServiceInstanceWeblogicServer {
   readonly upperStackProductName?: string;
   /**
   * admin block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#admin JavaServiceInstance#admin}
   */
   readonly admin: JavaServiceInstanceWeblogicServerAdmin;
   /**
   * application_database block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#application_database JavaServiceInstance#application_database}
   */
   readonly applicationDatabase?: JavaServiceInstanceWeblogicServerApplicationDatabase[] | cdktf.IResolvable;
   /**
   * cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#cluster JavaServiceInstance#cluster}
   */
   readonly cluster?: JavaServiceInstanceWeblogicServerCluster[] | cdktf.IResolvable;
   /**
   * database block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#database JavaServiceInstance#database}
   */
   readonly database: JavaServiceInstanceWeblogicServerDatabase;
   /**
   * domain block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#domain JavaServiceInstance#domain}
   */
   readonly domain?: JavaServiceInstanceWeblogicServerDomain;
   /**
   * managed_servers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#managed_servers JavaServiceInstance#managed_servers}
   */
   readonly managedServers?: JavaServiceInstanceWeblogicServerManagedServers;
   /**
   * node_manager block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#node_manager JavaServiceInstance#node_manager}
   */
   readonly nodeManager?: JavaServiceInstanceWeblogicServerNodeManager;
   /**
   * ports block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance#ports JavaServiceInstance#ports}
   */
   readonly ports?: JavaServiceInstanceWeblogicServerPorts;

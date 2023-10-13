@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v6/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.NewDataOraclepaasDatabaseServiceInstance(scope Construct, id *string, config DataOraclepaasDatabaseServiceInstanceConfig) DataOraclepaasDatabaseServiceInstance
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v6/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v6/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v6/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v6/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
 
 &dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstanceConfig {
 	Connection: interface{},

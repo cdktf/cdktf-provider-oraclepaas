@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstance(scope Construct, id *string, config MysqlServiceInstanceConfig) MysqlServiceInstance
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.putBackups">PutBackups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.putMysqlConfiguration">PutMysqlConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -151,6 +154,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.getAnyMapAttribute"></a>
 
@@ -260,6 +279,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.interpolationForAttribute"></a>
 
 ```go
@@ -269,6 +306,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -387,13 +448,14 @@ func ResetVmUser()
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a MysqlServiceInstance resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +501,7 @@ mysqlserviceinstance.MysqlServiceInstance_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,6 +509,50 @@ mysqlserviceinstance.MysqlServiceInstance_IsTerraformResource(x interface{}) *bo
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
+
+mysqlserviceinstance.MysqlServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a MysqlServiceInstance resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the MysqlServiceInstance to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing MysqlServiceInstance that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the MysqlServiceInstance to import is found.
 
 ---
 
@@ -1034,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceBackups {
 	CloudStorageContainer: *string,
@@ -1108,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceConfig {
 	Connection: interface{},
@@ -1118,13 +1224,13 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlservice
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	MysqlConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceMysqlConfiguration,
+	MysqlConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfiguration,
 	Name: *string,
 	Shape: *string,
 	SshPublicKey: *string,
 	AvailabilityDomain: *string,
 	BackupDestination: *string,
-	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceBackups,
+	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceBackups,
 	Description: *string,
 	Id: *string,
 	IpNetwork: *string,
@@ -1132,7 +1238,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlservice
 	NotificationEmail: *string,
 	Region: *string,
 	Subnet: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceTimeouts,
 	VmUser: *string,
 }
 ```
@@ -1443,12 +1549,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceMysqlConfiguration {
 	DbName: *string,
 	DbStorage: *f64,
-	EnterpriseMonitorConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration,
+	EnterpriseMonitorConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration,
 	MysqlCharset: *string,
 	MysqlCollation: *string,
 	MysqlPassword: *string,
@@ -1603,7 +1709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration {
 	EmAgentPassword: *string,
@@ -1691,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceTimeouts {
 	Create: *string,
@@ -1739,7 +1845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceBackupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceBackupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceBackupsOutputReference
 ```
@@ -2097,7 +2203,7 @@ func InternalValue() MysqlServiceInstanceBackups
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfigurationOutputReference
 ```
@@ -2491,7 +2597,7 @@ func InternalValue() MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceMysqlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceMysqlConfigurationOutputReference
 ```
@@ -3076,7 +3182,7 @@ func InternalValue() MysqlServiceInstanceMysqlConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceTimeoutsOutputReference
 ```

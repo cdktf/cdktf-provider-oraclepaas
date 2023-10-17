@@ -304,6 +304,7 @@ def reset_mysql_endpoint() -> None
 | <code><a href="#@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a OraclepaasProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -370,6 +371,55 @@ provider.OraclepaasProvider.is_terraform_provider(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_oraclepaas import provider
+
+provider.OraclepaasProvider.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a OraclepaasProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the OraclepaasProvider to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing OraclepaasProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the OraclepaasProvider to import is found.
 
 ---
 

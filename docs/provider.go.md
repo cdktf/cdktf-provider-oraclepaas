@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.NewOraclepaasProvider(scope Construct, id *string, config OraclepaasProviderConfig) OraclepaasProvider
 ```
@@ -190,7 +190,7 @@ func ResetMysqlEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_IsConstruct(x interface{}) *bool
 ```
@@ -222,7 +222,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -236,7 +236,7 @@ provider.OraclepaasProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -250,7 +250,7 @@ provider.OraclepaasProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.provider.OraclepaasProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 provider.OraclepaasProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.provider.OraclepaasProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/provider"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/provider"
 
 &provider.OraclepaasProviderConfig {
 	IdentityDomain: *string,

@@ -1,7 +1,9 @@
 
-# Terraform CDK oraclepaas Provider ~> 1.5
+# Terraform CDK oraclepaas Provider tracks ~> 1.5
 
 This repo builds and publishes the Terraform oraclepaas Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on oraclepaas 1.5.3
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform oraclepaas Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform oraclepaas Provider](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.0)
+- [Terraform oraclepaas Provider](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-oraclepaas/releases)
 - [Terraform Engine](https://terraform.io)
 

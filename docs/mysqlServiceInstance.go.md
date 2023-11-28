@@ -1,7 +1,3 @@
-# `oraclepaas_mysql_service_instance`
-
-Refer to the Terraform Registory for docs: [`oraclepaas_mysql_service_instance`](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_service_instance).
-
 # `mysqlServiceInstance` Submodule <a name="`mysqlServiceInstance` Submodule" id="@cdktf/provider-oraclepaas.mysqlServiceInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstance(scope Construct, id *string, config MysqlServiceInstanceConfig) MysqlServiceInstance
 ```
@@ -455,7 +451,7 @@ func ResetVmUser()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +483,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +497,7 @@ mysqlserviceinstance.MysqlServiceInstance_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +511,7 @@ mysqlserviceinstance.MysqlServiceInstance_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.MysqlServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1140,7 +1136,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceBackups {
 	CloudStorageContainer: *string,
@@ -1214,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceConfig {
 	Connection: interface{},
@@ -1224,13 +1220,13 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlservice
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	MysqlConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceMysqlConfiguration,
+	MysqlConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfiguration,
 	Name: *string,
 	Shape: *string,
 	SshPublicKey: *string,
 	AvailabilityDomain: *string,
 	BackupDestination: *string,
-	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceBackups,
+	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceBackups,
 	Description: *string,
 	Id: *string,
 	IpNetwork: *string,
@@ -1238,7 +1234,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlservice
 	NotificationEmail: *string,
 	Region: *string,
 	Subnet: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceTimeouts,
 	VmUser: *string,
 }
 ```
@@ -1549,12 +1545,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceMysqlConfiguration {
 	DbName: *string,
 	DbStorage: *f64,
-	EnterpriseMonitorConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration,
+	EnterpriseMonitorConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration,
 	MysqlCharset: *string,
 	MysqlCollation: *string,
 	MysqlPassword: *string,
@@ -1709,7 +1705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfiguration {
 	EmAgentPassword: *string,
@@ -1797,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 &mysqlserviceinstance.MysqlServiceInstanceTimeouts {
 	Create: *string,
@@ -1845,7 +1841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceBackupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceBackupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceBackupsOutputReference
 ```
@@ -2203,7 +2199,7 @@ func InternalValue() MysqlServiceInstanceBackups
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConfigurationOutputReference
 ```
@@ -2597,7 +2593,7 @@ func InternalValue() MysqlServiceInstanceMysqlConfigurationEnterpriseMonitorConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceMysqlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceMysqlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceMysqlConfigurationOutputReference
 ```
@@ -3182,7 +3178,7 @@ func InternalValue() MysqlServiceInstanceMysqlConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlServiceInstance.MysqlServiceInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlserviceinstance"
 
 mysqlserviceinstance.NewMysqlServiceInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlServiceInstanceTimeoutsOutputReference
 ```

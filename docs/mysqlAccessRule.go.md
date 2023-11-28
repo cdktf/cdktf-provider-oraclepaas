@@ -1,7 +1,3 @@
-# `oraclepaas_mysql_access_rule`
-
-Refer to the Terraform Registory for docs: [`oraclepaas_mysql_access_rule`](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/mysql_access_rule).
-
 # `mysqlAccessRule` Submodule <a name="`mysqlAccessRule` Submodule" id="@cdktf/provider-oraclepaas.mysqlAccessRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 mysqlaccessrule.NewMysqlAccessRule(scope Construct, id *string, config MysqlAccessRuleConfig) MysqlAccessRule
 ```
@@ -380,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 mysqlaccessrule.MysqlAccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 mysqlaccessrule.MysqlAccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ mysqlaccessrule.MysqlAccessRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 mysqlaccessrule.MysqlAccessRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ mysqlaccessrule.MysqlAccessRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 mysqlaccessrule.MysqlAccessRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +896,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 &mysqlaccessrule.MysqlAccessRuleConfig {
 	Connection: interface{},
@@ -919,7 +915,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessr
 	Enabled: interface{},
 	Id: *string,
 	Protocol: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.mysqlAccessRule.MysqlAccessRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.mysqlAccessRule.MysqlAccessRuleTimeouts,
 }
 ```
 
@@ -1147,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 &mysqlaccessrule.MysqlAccessRuleTimeouts {
 	Create: *string,
@@ -1195,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.mysqlAccessRule.MysqlAccessRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/mysqlaccessrule"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/mysqlaccessrule"
 
 mysqlaccessrule.NewMysqlAccessRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MysqlAccessRuleTimeoutsOutputReference
 ```

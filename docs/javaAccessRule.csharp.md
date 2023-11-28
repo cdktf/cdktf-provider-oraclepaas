@@ -1,7 +1,3 @@
-# `oraclepaas_java_access_rule`
-
-Refer to the Terraform Registory for docs: [`oraclepaas_java_access_rule`](https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_access_rule).
-
 # `javaAccessRule` Submodule <a name="`javaAccessRule` Submodule" id="@cdktf/provider-oraclepaas.javaAccessRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

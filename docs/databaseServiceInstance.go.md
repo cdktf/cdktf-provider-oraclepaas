@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstance(scope Construct, id *string, config DatabaseServiceInstanceConfig) DatabaseServiceInstance
 ```
@@ -588,7 +588,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.DatabaseServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.DatabaseServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ databaseserviceinstance.DatabaseServiceInstance_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.DatabaseServiceInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ databaseserviceinstance.DatabaseServiceInstance_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.DatabaseServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1515,7 +1515,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceBackups {
 	CloudStorageContainer: *string,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceConfig {
 	Connection: interface{},
@@ -1599,7 +1599,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserv
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DatabaseConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceDatabaseConfiguration,
+	DatabaseConfiguration: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceDatabaseConfiguration,
 	Edition: *string,
 	Name: *string,
 	Shape: *string,
@@ -1607,23 +1607,23 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserv
 	SubscriptionType: *string,
 	Version: *string,
 	AvailabilityDomain: *string,
-	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceBackups,
+	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceBackups,
 	BringYourOwnLicense: interface{},
-	DefaultAccessRules: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceDefaultAccessRules,
+	DefaultAccessRules: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceDefaultAccessRules,
 	Description: *string,
 	DesiredState: *string,
 	HighPerformanceStorage: interface{},
-	HybridDisasterRecovery: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceHybridDisasterRecovery,
+	HybridDisasterRecovery: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceHybridDisasterRecovery,
 	Id: *string,
-	InstantiateFromBackup: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceInstantiateFromBackup,
+	InstantiateFromBackup: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceInstantiateFromBackup,
 	IpNetwork: *string,
 	IpReservations: *[]*string,
 	Level: *string,
 	NotificationEmail: *string,
 	Region: *string,
-	Standby: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceStandby,
+	Standby: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceStandby,
 	Subnet: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.databaseServiceInstance.DatabaseServiceInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.databaseServiceInstance.DatabaseServiceInstanceTimeouts,
 }
 ```
 
@@ -2058,7 +2058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceDatabaseConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceDatabaseConfiguration {
 	AdminPassword: *string,
@@ -2328,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceDefaultAccessRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceDefaultAccessRules {
 	EnableDbConsole: interface{},
@@ -2486,7 +2486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceHybridDisasterRecovery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceHybridDisasterRecovery {
 	CloudStorageContainer: *string,
@@ -2546,7 +2546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceInstantiateFromBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceInstantiateFromBackup {
 	CloudStorageContainer: *string,
@@ -2676,7 +2676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceStandby.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceStandby {
 	AvailabilityDomain: *string,
@@ -2722,7 +2722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 &databaseserviceinstance.DatabaseServiceInstanceTimeouts {
 	Create: *string,
@@ -2784,7 +2784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceBackupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceBackupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceBackupsOutputReference
 ```
@@ -3142,7 +3142,7 @@ func InternalValue() DatabaseServiceInstanceBackups
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceDatabaseConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceDatabaseConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceDatabaseConfigurationOutputReference
 ```
@@ -3899,7 +3899,7 @@ func InternalValue() DatabaseServiceInstanceDatabaseConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceDefaultAccessRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceDefaultAccessRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceDefaultAccessRulesOutputReference
 ```
@@ -4438,7 +4438,7 @@ func InternalValue() DatabaseServiceInstanceDefaultAccessRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceHybridDisasterRecoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceHybridDisasterRecoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceHybridDisasterRecoveryOutputReference
 ```
@@ -4767,7 +4767,7 @@ func InternalValue() DatabaseServiceInstanceHybridDisasterRecovery
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceInstantiateFromBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceInstantiateFromBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceInstantiateFromBackupOutputReference
 ```
@@ -5234,7 +5234,7 @@ func InternalValue() DatabaseServiceInstanceInstantiateFromBackup
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceStandbyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceStandbyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceStandbyOutputReference
 ```
@@ -5527,7 +5527,7 @@ func InternalValue() DatabaseServiceInstanceStandby
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.databaseServiceInstance.DatabaseServiceInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/databaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/databaseserviceinstance"
 
 databaseserviceinstance.NewDatabaseServiceInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseServiceInstanceTimeoutsOutputReference
 ```

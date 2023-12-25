@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [applicationContainer](./applicationContainer.typescript.md)
 - [dataOraclepaasDatabaseServiceInstance](./dataOraclepaasDatabaseServiceInstance.typescript.md)
 - [databaseAccessRule](./databaseAccessRule.typescript.md)
@@ -10,3 +13,8 @@ The following submodules are available:
 - [mysqlAccessRule](./mysqlAccessRule.typescript.md)
 - [mysqlServiceInstance](./mysqlServiceInstance.typescript.md)
 - [provider](./provider.typescript.md)
+
+
+
+
+

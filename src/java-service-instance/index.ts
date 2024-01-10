@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/oraclepaas/1.5.3/docs/resources/java_service_instance
 // generated from terraform resource schema
 
@@ -171,6 +166,49 @@ export function javaServiceInstanceBackupsToTerraform(struct?: JavaServiceInstan
   }
 }
 
+
+export function javaServiceInstanceBackupsToHclTerraform(struct?: JavaServiceInstanceBackupsOutputReference | JavaServiceInstanceBackups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auto_generate: {
+      value: cdktf.booleanToHclTerraform(struct!.autoGenerate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cloud_storage_container: {
+      value: cdktf.stringToHclTerraform(struct!.cloudStorageContainer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloud_storage_password: {
+      value: cdktf.stringToHclTerraform(struct!.cloudStoragePassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloud_storage_username: {
+      value: cdktf.stringToHclTerraform(struct!.cloudStorageUsername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_oauth_for_storage: {
+      value: cdktf.booleanToHclTerraform(struct!.useOauthForStorage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JavaServiceInstanceBackupsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -326,6 +364,31 @@ export function javaServiceInstanceLoadBalancerToTerraform(struct?: JavaServiceI
   }
 }
 
+
+export function javaServiceInstanceLoadBalancerToHclTerraform(struct?: JavaServiceInstanceLoadBalancerOutputReference | JavaServiceInstanceLoadBalancer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    load_balancing_policy: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancingPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnets: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JavaServiceInstanceLoadBalancerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -436,6 +499,37 @@ export function javaServiceInstanceOracleTrafficDirectorAdminToTerraform(struct?
     port: cdktf.numberToTerraform(struct!.port),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function javaServiceInstanceOracleTrafficDirectorAdminToHclTerraform(struct?: JavaServiceInstanceOracleTrafficDirectorAdminOutputReference | JavaServiceInstanceOracleTrafficDirectorAdmin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceOracleTrafficDirectorAdminOutputReference extends cdktf.ComplexObject {
@@ -559,6 +653,43 @@ export function javaServiceInstanceOracleTrafficDirectorListenerToTerraform(stru
     privileged_secured_port: cdktf.numberToTerraform(struct!.privilegedSecuredPort),
     secured_port: cdktf.numberToTerraform(struct!.securedPort),
   }
+}
+
+
+export function javaServiceInstanceOracleTrafficDirectorListenerToHclTerraform(struct?: JavaServiceInstanceOracleTrafficDirectorListenerOutputReference | JavaServiceInstanceOracleTrafficDirectorListener): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    privileged_port: {
+      value: cdktf.numberToHclTerraform(struct!.privilegedPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    privileged_secured_port: {
+      value: cdktf.numberToHclTerraform(struct!.privilegedSecuredPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    secured_port: {
+      value: cdktf.numberToHclTerraform(struct!.securedPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceOracleTrafficDirectorListenerOutputReference extends cdktf.ComplexObject {
@@ -719,6 +850,55 @@ export function javaServiceInstanceOracleTrafficDirectorToTerraform(struct?: Jav
     admin: javaServiceInstanceOracleTrafficDirectorAdminToTerraform(struct!.admin),
     listener: javaServiceInstanceOracleTrafficDirectorListenerToTerraform(struct!.listener),
   }
+}
+
+
+export function javaServiceInstanceOracleTrafficDirectorToHclTerraform(struct?: JavaServiceInstanceOracleTrafficDirectorOutputReference | JavaServiceInstanceOracleTrafficDirector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    high_availability: {
+      value: cdktf.booleanToHclTerraform(struct!.highAvailability),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ip_reservations: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipReservations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    load_balancing_policy: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancingPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    shape: {
+      value: cdktf.stringToHclTerraform(struct!.shape),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    admin: {
+      value: javaServiceInstanceOracleTrafficDirectorAdminToHclTerraform(struct!.admin),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceOracleTrafficDirectorAdminList",
+    },
+    listener: {
+      value: javaServiceInstanceOracleTrafficDirectorListenerToHclTerraform(struct!.listener),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceOracleTrafficDirectorListenerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceOracleTrafficDirectorOutputReference extends cdktf.ComplexObject {
@@ -905,6 +1085,37 @@ export function javaServiceInstanceTimeoutsToTerraform(struct?: JavaServiceInsta
   }
 }
 
+
+export function javaServiceInstanceTimeoutsToHclTerraform(struct?: JavaServiceInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JavaServiceInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1037,6 +1248,43 @@ export function javaServiceInstanceWeblogicServerAdminToTerraform(struct?: JavaS
     secured_port: cdktf.numberToTerraform(struct!.securedPort),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerAdminToHclTerraform(struct?: JavaServiceInstanceWeblogicServerAdminOutputReference | JavaServiceInstanceWeblogicServerAdmin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    secured_port: {
+      value: cdktf.numberToHclTerraform(struct!.securedPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerAdminOutputReference extends cdktf.ComplexObject {
@@ -1182,6 +1430,43 @@ export function javaServiceInstanceWeblogicServerApplicationDatabaseToTerraform(
     pdb_name: cdktf.stringToTerraform(struct!.pdbName),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerApplicationDatabaseToHclTerraform(struct?: JavaServiceInstanceWeblogicServerApplicationDatabase | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pdb_name: {
+      value: cdktf.stringToHclTerraform(struct!.pdbName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerApplicationDatabaseOutputReference extends cdktf.ComplexObject {
@@ -1361,6 +1646,55 @@ export function javaServiceInstanceWeblogicServerClusterToTerraform(struct?: Jav
     shape: cdktf.stringToTerraform(struct!.shape),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerClusterToHclTerraform(struct?: JavaServiceInstanceWeblogicServerCluster | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathPrefixes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    server_count: {
+      value: cdktf.numberToHclTerraform(struct!.serverCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    servers_per_node: {
+      value: cdktf.numberToHclTerraform(struct!.serversPerNode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    shape: {
+      value: cdktf.stringToHclTerraform(struct!.shape),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerClusterOutputReference extends cdktf.ComplexObject {
@@ -1579,6 +1913,43 @@ export function javaServiceInstanceWeblogicServerDatabaseToTerraform(struct?: Ja
   }
 }
 
+
+export function javaServiceInstanceWeblogicServerDatabaseToHclTerraform(struct?: JavaServiceInstanceWeblogicServerDatabaseOutputReference | JavaServiceInstanceWeblogicServerDatabase): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pdb_name: {
+      value: cdktf.stringToHclTerraform(struct!.pdbName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JavaServiceInstanceWeblogicServerDatabaseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1722,6 +2093,43 @@ export function javaServiceInstanceWeblogicServerDomainToTerraform(struct?: Java
     partition_count: cdktf.numberToTerraform(struct!.partitionCount),
     volume_size: cdktf.stringToTerraform(struct!.volumeSize),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerDomainToHclTerraform(struct?: JavaServiceInstanceWeblogicServerDomainOutputReference | JavaServiceInstanceWeblogicServerDomain): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partition_count: {
+      value: cdktf.numberToHclTerraform(struct!.partitionCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_size: {
+      value: cdktf.stringToHclTerraform(struct!.volumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerDomainOutputReference extends cdktf.ComplexObject {
@@ -1883,6 +2291,61 @@ export function javaServiceInstanceWeblogicServerManagedServersToTerraform(struc
     overwrite_jvm_args: cdktf.booleanToTerraform(struct!.overwriteJvmArgs),
     server_count: cdktf.numberToTerraform(struct!.serverCount),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerManagedServersToHclTerraform(struct?: JavaServiceInstanceWeblogicServerManagedServersOutputReference | JavaServiceInstanceWeblogicServerManagedServers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    initial_heap_size: {
+      value: cdktf.numberToHclTerraform(struct!.initialHeapSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    initial_permanent_generation: {
+      value: cdktf.numberToHclTerraform(struct!.initialPermanentGeneration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    jvm_args: {
+      value: cdktf.stringToHclTerraform(struct!.jvmArgs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_heap_size: {
+      value: cdktf.numberToHclTerraform(struct!.maxHeapSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_permanent_generation: {
+      value: cdktf.numberToHclTerraform(struct!.maxPermanentGeneration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    overwrite_jvm_args: {
+      value: cdktf.booleanToHclTerraform(struct!.overwriteJvmArgs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    server_count: {
+      value: cdktf.numberToHclTerraform(struct!.serverCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerManagedServersOutputReference extends cdktf.ComplexObject {
@@ -2092,6 +2555,37 @@ export function javaServiceInstanceWeblogicServerNodeManagerToTerraform(struct?:
   }
 }
 
+
+export function javaServiceInstanceWeblogicServerNodeManagerToHclTerraform(struct?: JavaServiceInstanceWeblogicServerNodeManagerOutputReference | JavaServiceInstanceWeblogicServerNodeManager): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JavaServiceInstanceWeblogicServerNodeManagerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2214,6 +2708,43 @@ export function javaServiceInstanceWeblogicServerPortsToTerraform(struct?: JavaS
     privileged_content_port: cdktf.numberToTerraform(struct!.privilegedContentPort),
     privileged_secured_content_port: cdktf.numberToTerraform(struct!.privilegedSecuredContentPort),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerPortsToHclTerraform(struct?: JavaServiceInstanceWeblogicServerPortsOutputReference | JavaServiceInstanceWeblogicServerPorts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_port: {
+      value: cdktf.numberToHclTerraform(struct!.contentPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    deployment_channel_port: {
+      value: cdktf.numberToHclTerraform(struct!.deploymentChannelPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    privileged_content_port: {
+      value: cdktf.numberToHclTerraform(struct!.privilegedContentPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    privileged_secured_content_port: {
+      value: cdktf.numberToHclTerraform(struct!.privilegedSecuredContentPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerPortsOutputReference extends cdktf.ComplexObject {
@@ -2431,6 +2962,109 @@ export function javaServiceInstanceWeblogicServerToTerraform(struct?: JavaServic
     node_manager: javaServiceInstanceWeblogicServerNodeManagerToTerraform(struct!.nodeManager),
     ports: javaServiceInstanceWeblogicServerPortsToTerraform(struct!.ports),
   }
+}
+
+
+export function javaServiceInstanceWeblogicServerToHclTerraform(struct?: JavaServiceInstanceWeblogicServerOutputReference | JavaServiceInstanceWeblogicServer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backup_volume_size: {
+      value: cdktf.stringToHclTerraform(struct!.backupVolumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cluster_name: {
+      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connect_string: {
+      value: cdktf.stringToHclTerraform(struct!.connectString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_reservations: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipReservations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    middleware_volume_size: {
+      value: cdktf.stringToHclTerraform(struct!.middlewareVolumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    shape: {
+      value: cdktf.stringToHclTerraform(struct!.shape),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    upper_stack_product_name: {
+      value: cdktf.stringToHclTerraform(struct!.upperStackProductName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    admin: {
+      value: javaServiceInstanceWeblogicServerAdminToHclTerraform(struct!.admin),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerAdminList",
+    },
+    application_database: {
+      value: cdktf.listMapperHcl(javaServiceInstanceWeblogicServerApplicationDatabaseToHclTerraform, true)(struct!.applicationDatabase),
+      isBlock: true,
+      type: "set",
+      storageClassType: "JavaServiceInstanceWeblogicServerApplicationDatabaseList",
+    },
+    cluster: {
+      value: cdktf.listMapperHcl(javaServiceInstanceWeblogicServerClusterToHclTerraform, true)(struct!.cluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerClusterList",
+    },
+    database: {
+      value: javaServiceInstanceWeblogicServerDatabaseToHclTerraform(struct!.database),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerDatabaseList",
+    },
+    domain: {
+      value: javaServiceInstanceWeblogicServerDomainToHclTerraform(struct!.domain),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerDomainList",
+    },
+    managed_servers: {
+      value: javaServiceInstanceWeblogicServerManagedServersToHclTerraform(struct!.managedServers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerManagedServersList",
+    },
+    node_manager: {
+      value: javaServiceInstanceWeblogicServerNodeManagerToHclTerraform(struct!.nodeManager),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerNodeManagerList",
+    },
+    ports: {
+      value: javaServiceInstanceWeblogicServerPortsToHclTerraform(struct!.ports),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JavaServiceInstanceWeblogicServerPortsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JavaServiceInstanceWeblogicServerOutputReference extends cdktf.ComplexObject {
@@ -3326,5 +3960,175 @@ export class JavaServiceInstance extends cdktf.TerraformResource {
       timeouts: javaServiceInstanceTimeoutsToTerraform(this._timeouts.internalValue),
       weblogic_server: javaServiceInstanceWeblogicServerToTerraform(this._weblogicServer.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assign_public_ip: {
+        value: cdktf.booleanToHclTerraform(this._assignPublicIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      availability_domain: {
+        value: cdktf.stringToHclTerraform(this._availabilityDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup_destination: {
+        value: cdktf.stringToHclTerraform(this._backupDestination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bring_your_own_license: {
+        value: cdktf.booleanToHclTerraform(this._bringYourOwnLicense),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      desired_state: {
+        value: cdktf.stringToHclTerraform(this._desiredState),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      edition: {
+        value: cdktf.stringToHclTerraform(this._edition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_admin_console: {
+        value: cdktf.booleanToHclTerraform(this._enableAdminConsole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_delete: {
+        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_network: {
+        value: cdktf.stringToHclTerraform(this._ipNetwork),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      level: {
+        value: cdktf.stringToHclTerraform(this._level),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metering_frequency: {
+        value: cdktf.stringToHclTerraform(this._meteringFrequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_email: {
+        value: cdktf.stringToHclTerraform(this._notificationEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_version: {
+        value: cdktf.stringToHclTerraform(this._serviceVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snapshot_name: {
+        value: cdktf.stringToHclTerraform(this._snapshotName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_service_name: {
+        value: cdktf.stringToHclTerraform(this._sourceServiceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssh_public_key: {
+        value: cdktf.stringToHclTerraform(this._sshPublicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet: {
+        value: cdktf.stringToHclTerraform(this._subnet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_identity_service: {
+        value: cdktf.booleanToHclTerraform(this._useIdentityService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      backups: {
+        value: javaServiceInstanceBackupsToHclTerraform(this._backups.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "JavaServiceInstanceBackupsList",
+      },
+      load_balancer: {
+        value: javaServiceInstanceLoadBalancerToHclTerraform(this._loadBalancer.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "JavaServiceInstanceLoadBalancerList",
+      },
+      oracle_traffic_director: {
+        value: javaServiceInstanceOracleTrafficDirectorToHclTerraform(this._oracleTrafficDirector.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "JavaServiceInstanceOracleTrafficDirectorList",
+      },
+      timeouts: {
+        value: javaServiceInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "JavaServiceInstanceTimeouts",
+      },
+      weblogic_server: {
+        value: javaServiceInstanceWeblogicServerToHclTerraform(this._weblogicServer.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "JavaServiceInstanceWeblogicServerList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

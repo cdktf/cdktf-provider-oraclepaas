@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainer(scope Construct, id *string, config ApplicationContainerConfig) ApplicationContainer
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -146,6 +147,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.toMetadata"></a>
 
@@ -543,7 +550,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.ApplicationContainer_IsConstruct(x interface{}) *bool
 ```
@@ -575,7 +582,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.ApplicationContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -589,7 +596,7 @@ applicationcontainer.ApplicationContainer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.ApplicationContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +610,7 @@ applicationcontainer.ApplicationContainer_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.ApplicationContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1294,7 +1301,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerConfig {
 	Connection: interface{},
@@ -1308,14 +1315,14 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationc
 	ArchiveUrl: *string,
 	AuthType: *string,
 	AvailabilityDomain: *[]*string,
-	Deployment: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.applicationContainer.ApplicationContainerDeployment,
+	Deployment: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.applicationContainer.ApplicationContainerDeployment,
 	DeploymentFile: *string,
 	GitPassword: *string,
 	GitRepository: *string,
 	GitUsername: *string,
 	Id: *string,
 	LoadBalancerSubnets: *[]*string,
-	Manifest: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.applicationContainer.ApplicationContainerManifest,
+	Manifest: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.applicationContainer.ApplicationContainerManifest,
 	ManifestFile: *string,
 	Notes: *string,
 	NotificationEmail: *string,
@@ -1323,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationc
 	Runtime: *string,
 	SubscriptionType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.applicationContainer.ApplicationContainerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.applicationContainer.ApplicationContainerTimeouts,
 }
 ```
 
@@ -1685,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerDeployment {
 	Environment: *map[string]*string,
@@ -1803,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerDeploymentServices {
 	Identifier: *string,
@@ -1891,7 +1898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerManifest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerManifest {
 	Clustered: interface{},
@@ -1900,8 +1907,8 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationc
 	Home: *string,
 	Mode: *string,
 	Notes: *string,
-	Release: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.applicationContainer.ApplicationContainerManifestRelease,
-	Runtime: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.applicationContainer.ApplicationContainerManifestRuntime,
+	Release: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.applicationContainer.ApplicationContainerManifestRelease,
+	Runtime: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas.applicationContainer.ApplicationContainerManifestRuntime,
 	ShutdownTime: *f64,
 	StartupTime: *f64,
 	Type: *string,
@@ -2067,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerManifestRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerManifestRelease {
 	BuildAttribute: *string,
@@ -2127,7 +2134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerManifestRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerManifestRuntime {
 	MajorVersion: *string,
@@ -2159,7 +2166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 &applicationcontainer.ApplicationContainerTimeouts {
 	Create: *string,
@@ -2207,7 +2214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationContainerDeploymentOutputReference
 ```
@@ -2672,7 +2679,7 @@ func InternalValue() ApplicationContainerDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerDeploymentServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationContainerDeploymentServicesList
 ```
@@ -2713,10 +2720,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2815,7 +2839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerDeploymentServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerDeploymentServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationContainerDeploymentServicesOutputReference
 ```
@@ -3192,7 +3216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerManifestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerManifestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationContainerManifestOutputReference
 ```
@@ -3786,7 +3810,7 @@ func InternalValue() ApplicationContainerManifest
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerManifestReleaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerManifestReleaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationContainerManifestReleaseOutputReference
 ```
@@ -4122,7 +4146,7 @@ func InternalValue() ApplicationContainerManifestRelease
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerManifestRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerManifestRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationContainerManifestRuntimeOutputReference
 ```
@@ -4393,7 +4417,7 @@ func InternalValue() ApplicationContainerManifestRuntime
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.applicationContainer.ApplicationContainerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/applicationcontainer"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/applicationcontainer"
 
 applicationcontainer.NewApplicationContainerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationContainerTimeoutsOutputReference
 ```

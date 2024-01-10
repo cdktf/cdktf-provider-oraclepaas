@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstance(scope Construct, id *string, config JavaServiceInstanceConfig) JavaServiceInstance
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -151,6 +152,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.toMetadata"></a>
 
@@ -590,7 +597,7 @@ func ResetUseIdentityService()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.JavaServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -622,7 +629,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.JavaServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -636,7 +643,7 @@ javaserviceinstance.JavaServiceInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.JavaServiceInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +657,7 @@ javaserviceinstance.JavaServiceInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.JavaServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1484,7 +1491,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceBackups {
 	CloudStorageContainer: *string,
@@ -1572,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceConfig {
 	Connection: interface{},
@@ -1582,11 +1589,11 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaservicei
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceBackups,
+	Backups: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceBackups,
 	Edition: *string,
 	Name: *string,
 	SshPublicKey: *string,
-	WeblogicServer: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServer,
+	WeblogicServer: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServer,
 	AssignPublicIp: interface{},
 	AvailabilityDomain: *string,
 	BackupDestination: *string,
@@ -1598,16 +1605,16 @@ import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaservicei
 	Id: *string,
 	IpNetwork: *string,
 	Level: *string,
-	LoadBalancer: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceLoadBalancer,
+	LoadBalancer: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceLoadBalancer,
 	MeteringFrequency: *string,
 	NotificationEmail: *string,
-	OracleTrafficDirector: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceOracleTrafficDirector,
+	OracleTrafficDirector: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceOracleTrafficDirector,
 	Region: *string,
 	ServiceVersion: *string,
 	SnapshotName: *string,
 	SourceServiceName: *string,
 	Subnet: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceTimeouts,
 	UseIdentityService: interface{},
 }
 ```
@@ -2065,7 +2072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceLoadBalancer {
 	LoadBalancingPolicy: *string,
@@ -2111,14 +2118,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceOracleTrafficDirector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceOracleTrafficDirector {
-	Admin: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorAdmin,
+	Admin: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorAdmin,
 	Shape: *string,
 	HighAvailability: interface{},
 	IpReservations: *[]*string,
-	Listener: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorListener,
+	Listener: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorListener,
 	LoadBalancingPolicy: *string,
 }
 ```
@@ -2217,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorAdmin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceOracleTrafficDirectorAdmin {
 	Password: *string,
@@ -2277,7 +2284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceOracleTrafficDirectorListener {
 	Port: *f64,
@@ -2351,7 +2358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceTimeouts {
 	Create: *string,
@@ -2411,23 +2418,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServer {
-	Admin: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServerAdmin,
-	Database: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServerDatabase,
+	Admin: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServerAdmin,
+	Database: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServerDatabase,
 	Shape: *string,
 	ApplicationDatabase: interface{},
 	BackupVolumeSize: *string,
 	Cluster: interface{},
 	ClusterName: *string,
 	ConnectString: *string,
-	Domain: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServerDomain,
+	Domain: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServerDomain,
 	IpReservations: *[]*string,
-	ManagedServers: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServerManagedServers,
+	ManagedServers: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServerManagedServers,
 	MiddlewareVolumeSize: *string,
-	NodeManager: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServerNodeManager,
-	Ports: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7.javaServiceInstance.JavaServiceInstanceWeblogicServerPorts,
+	NodeManager: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServerNodeManager,
+	Ports: github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8.javaServiceInstance.JavaServiceInstanceWeblogicServerPorts,
 	UpperStackProductName: *string,
 }
 ```
@@ -2655,7 +2662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerAdmin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerAdmin {
 	Password: *string,
@@ -2729,7 +2736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerApplicationDatabase {
 	Name: *string,
@@ -2803,7 +2810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerCluster {
 	Name: *string,
@@ -2905,7 +2912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerDatabase {
 	Password: *string,
@@ -2979,7 +2986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerDomain {
 	Mode: *string,
@@ -3053,7 +3060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerManagedServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerManagedServers {
 	InitialHeapSize: *f64,
@@ -3169,7 +3176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerNodeManager.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerNodeManager {
 	Password: *string,
@@ -3229,7 +3236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 &javaserviceinstance.JavaServiceInstanceWeblogicServerPorts {
 	ContentPort: *f64,
@@ -3305,7 +3312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceBackupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceBackupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceBackupsOutputReference
 ```
@@ -3692,7 +3699,7 @@ func InternalValue() JavaServiceInstanceBackups
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceLoadBalancerOutputReference
 ```
@@ -4032,7 +4039,7 @@ func InternalValue() JavaServiceInstanceLoadBalancer
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorAdminOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceOracleTrafficDirectorAdminOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceOracleTrafficDirectorAdminOutputReference
 ```
@@ -4365,7 +4372,7 @@ func InternalValue() JavaServiceInstanceOracleTrafficDirectorAdmin
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceOracleTrafficDirectorListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceOracleTrafficDirectorListenerOutputReference
 ```
@@ -4730,7 +4737,7 @@ func InternalValue() JavaServiceInstanceOracleTrafficDirectorListener
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceOracleTrafficDirectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceOracleTrafficDirectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceOracleTrafficDirectorOutputReference
 ```
@@ -5176,7 +5183,7 @@ func InternalValue() JavaServiceInstanceOracleTrafficDirector
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceTimeoutsOutputReference
 ```
@@ -5512,7 +5519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerAdminOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerAdminOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerAdminOutputReference
 ```
@@ -5874,7 +5881,7 @@ func InternalValue() JavaServiceInstanceWeblogicServerAdmin
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerApplicationDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JavaServiceInstanceWeblogicServerApplicationDatabaseList
 ```
@@ -5915,10 +5922,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6017,7 +6041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerApplicationDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerApplicationDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JavaServiceInstanceWeblogicServerApplicationDatabaseOutputReference
 ```
@@ -6379,7 +6403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JavaServiceInstanceWeblogicServerClusterList
 ```
@@ -6420,10 +6444,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6522,7 +6563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JavaServiceInstanceWeblogicServerClusterOutputReference
 ```
@@ -6949,7 +6990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerDatabaseOutputReference
 ```
@@ -7311,7 +7352,7 @@ func InternalValue() JavaServiceInstanceWeblogicServerDatabase
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerDomainOutputReference
 ```
@@ -7676,7 +7717,7 @@ func InternalValue() JavaServiceInstanceWeblogicServerDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerManagedServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerManagedServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerManagedServersOutputReference
 ```
@@ -8128,7 +8169,7 @@ func InternalValue() JavaServiceInstanceWeblogicServerManagedServers
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerNodeManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerNodeManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerNodeManagerOutputReference
 ```
@@ -8464,7 +8505,7 @@ func InternalValue() JavaServiceInstanceWeblogicServerNodeManager
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerOutputReference
 ```
@@ -9242,7 +9283,7 @@ func InternalValue() JavaServiceInstanceWeblogicServer
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.javaServiceInstance.JavaServiceInstanceWeblogicServerPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/javaserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/javaserviceinstance"
 
 javaserviceinstance.NewJavaServiceInstanceWeblogicServerPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JavaServiceInstanceWeblogicServerPortsOutputReference
 ```

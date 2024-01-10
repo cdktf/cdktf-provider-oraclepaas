@@ -304,4 +304,72 @@ export class OraclepaasProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_endpoint: {
+        value: cdktf.stringToHclTerraform(this._applicationEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_endpoint: {
+        value: cdktf.stringToHclTerraform(this._databaseEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_domain: {
+        value: cdktf.stringToHclTerraform(this._identityDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure: {
+        value: cdktf.booleanToHclTerraform(this._insecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      java_endpoint: {
+        value: cdktf.stringToHclTerraform(this._javaEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      mysql_endpoint: {
+        value: cdktf.stringToHclTerraform(this._mysqlEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/oraclepaas
 #### Initializers <a name="Initializers" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.NewDataOraclepaasDatabaseServiceInstance(scope Construct, id *string, config DataOraclepaasDatabaseServiceInstanceConfig) DataOraclepaasDatabaseServiceInstance
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/dataoraclepaasdatabaseserviceinstance"
 
 dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-oraclepaas.dataOraclepaasDatabaseServiceInstance.DataOraclepaasDatabaseServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v7/dataoraclepaasdatabaseserviceinstance"
+import "github.com/cdktf/cdktf-provider-oraclepaas-go/oraclepaas/v8/dataoraclepaasdatabaseserviceinstance"
 
 &dataoraclepaasdatabaseserviceinstance.DataOraclepaasDatabaseServiceInstanceConfig {
 	Connection: interface{},

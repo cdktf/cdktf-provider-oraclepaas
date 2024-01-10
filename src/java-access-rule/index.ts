@@ -80,6 +80,31 @@ export function javaAccessRuleTimeoutsToTerraform(struct?: JavaAccessRuleTimeout
   }
 }
 
+
+export function javaAccessRuleTimeoutsToHclTerraform(struct?: JavaAccessRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JavaAccessRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -387,5 +412,73 @@ export class JavaAccessRule extends cdktf.TerraformResource {
       source: cdktf.stringToTerraform(this._source),
       timeouts: javaAccessRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination: {
+        value: cdktf.stringToHclTerraform(this._destination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ports: {
+        value: cdktf.stringToHclTerraform(this._ports),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_instance_id: {
+        value: cdktf.stringToHclTerraform(this._serviceInstanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: javaAccessRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "JavaAccessRuleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
